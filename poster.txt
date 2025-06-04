@@ -1,0 +1,51 @@
+Solemne 2
+Análisis de Actividades Económicas usando Python y Streamlit
+Taller de Programación 2
+
+Autor:
+• Kevin Figueroa Cueto
+
+Resumen:
+Este proyecto implementa una interfaz interactiva para explorar datos extraídos de la API del Gobierno de Chile.
+Se aplica visualización de datos con Streamlit, utilizando pandas y matplotlib, para análisis de categorías económicas
+(alimentación, servicios, etc.)
+
+Tecnologías:
+• Lenguaje: Python
+• Librerías: Streamlit, pandas, matplotlib, requests
+
+Link de la API: datos.gob.cl
+resource: b8cb0fbb-3750-4256-ac03-3cd8d50aec9a
+
+Metodología
+
+Paso 1: Consumo de datos desde la API
+Se realizó una consulta a la API REST pública del portal datos.gob.cl utilizando el resource_id
+b8cb0fbb-3750-4256-ac03-3cd8d50aec9a, correspondiente a encuestas de actividades económicas.
+El consumo se efectuó con la librería requests, extrayendo hasta 1000 registros en formato JSON.
+
+Resultado: obtención dinámica de un DataFrame con múltiples variables para las categorías
+
+Paso 2: Procesamiento y análisis
+Una vez cargado el DataFrame con pandas, se aplicar procesos básicos de limpieza:
+• Eliminación de valores nulos (dropna)
+• Filtrado por columnas clave (A1, A2_1, A4_1)
+• Agrupaciones y conteos para análisis exploratorio
+
+Resultado: estructura depurada y lista para análisis por categoría y subcategoría.
+
+Paso 3: Visualización con filtros y gráficos
+Se implementaron visualizaciones interactivas mediante:
+• Gráficos de barras horizontales (matplotlib)
+• bar_chart y line_chart de Streamlit
+• Filtros tipo selectbox para selección de categorías A1
+
+Resultado: representación visual clara y personalizable de la información.
+
+Paso 4: Desarrollo de interfaz con Streamlit
+Se creó una aplicación web interactiva con Streamlit, que permite:
+• Interacción en tiempo real.
+• Visualización dinámica del contenido filtrado.
+• Ejecución local o despliegue web.
+
+Resultado: interfaz funcional y lista para la demostración.
