@@ -10,6 +10,9 @@ Este proyecto implementa una interfaz interactiva para explorar datos extraídos
 Se aplica visualización de datos con Streamlit, utilizando pandas y matplotlib, para análisis de categorías económicas
 (alimentación, servicios, etc.)
 
+Accede a la aplicación aquí:
+https://usskevfigsolem2.streamlit.app
+
 Tecnologías:
 • Lenguaje: Python
 • Librerías: Streamlit, pandas, matplotlib, requests
@@ -43,9 +46,9 @@ Se implementaron visualizaciones interactivas mediante:
 Resultado: representación visual clara y personalizable de la información.
 
 Paso 4: Desarrollo de interfaz con Streamlit
-Se creó una aplicación web interactiva con Streamlit, que permite:
+Se creó una aplicación web interactiva con Streamlit:
 • Interacción en tiempo real.
 • Visualización dinámica del contenido filtrado.
-• Ejecución local o despliegue web.
+• Ejecución local y despliegue web.
 
 Resultado: interfaz funcional y lista para la demostración.
